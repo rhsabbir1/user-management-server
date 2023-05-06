@@ -21,6 +21,11 @@ app.get('/user',(req , res)=>{
     res.send(user)
 })
 
+app.post('/user', (req , res)=>{
+    console.log('server is hitting')
+    console.log(req.body)
+})
+
 app.listen(port , ()=>{
     console.log(`server is running port ${port}`)
 })
